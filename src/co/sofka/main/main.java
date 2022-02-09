@@ -3,15 +3,17 @@ package co.sofka.main;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class main {
-    public static  Integer[] memoria = new Integer[43];
-    public static void main(String[] args) {
-        System.out.println("Buenas tardes creador, ingrese las tareas a realiza, al terminar ingrese 0");
-        Scanner sc = new Scanner(System.in);
-        String instruccion = sc.nextLine();
-        int opcion = -1;
-        //  ArrayList instrucciones=new ArrayList<String>();
 
+public class main {
+
+    public static  Integer[] memoria = new Integer[43];
+
+    public static void main(String[] args) {
+//        System.out.println("Buenas tardes creador, ingrese las tareas a realiza, al terminar ingrese 0");
+//        Scanner sc = new Scanner(System.in);
+//        String instruccion = sc.nextLine();
+//        int opcion = -1;
+//        //  ArrayList instrucciones=new ArrayList<String>();;
     }
 
     public static void hacerTareas(String[] instrucciones) {
@@ -30,7 +32,7 @@ public class main {
 
                 break;
             case "ADD":
-
+                memoria = MethodADD.ADD(memoria, parametros);
                 break;
             case "DEC":
 
@@ -53,8 +55,11 @@ public class main {
             i++;
         }
     }
+
+
     public static void MOV (String parametro1, String parametro2){
 
     }
+
 
 }
