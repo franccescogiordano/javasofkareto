@@ -14,20 +14,21 @@ public class main {
 
     }
 
-    public static void hacerTareas(String[] instrucciones) {
+    public static Integer hacerTareas(String[] instrucciones) {
         String[] instrucionesDesglosadas= new String[instrucciones.length];
        String[] instruccionArelizar= new String[2];
         String[] parametros= new String[2];
         int i=0;
-        int h = 0;
+
         String instruccionx;
 
-        for ( ; h == instrucciones.length;h++ ){
-
+        for ( int h = 0; h == instrucciones.length;h++ ){
+            final int dead = 1024;
             String instruccion = instrucciones[h];
             instruccionArelizar=instruccion.split(" ");
             instruccionx=instruccionArelizar[0];
             parametros=instruccionArelizar[1].split(",");
+
         switch (instruccionx){
             case "MOV":
 
@@ -42,7 +43,13 @@ public class main {
 
                 break;
             case "JMP":
-                  h =  JMP(parametros[0]);
+                if (h >= 1024) {
+                    return memoria[43];
+                }
+
+                else {
+                    h = JMP(parametros[0]);
+                }
                 break;
 
             case "JZ":
@@ -55,6 +62,7 @@ public class main {
         }
             i++;
         }
+        return null;
     }
     public static void MOV (String parametro1, String parametro2){
 
