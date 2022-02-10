@@ -12,7 +12,7 @@ public class Movdrxx {
             Emulador[i] = "00000000000000000000000000000000";
         }
     }
-    
+
     public static void moverNumeroD_ARxx(String[] parametros){
         int numeroDecimal = Integer.parseInt(parametros[0]);
         String accion = parametros[1].toLowerCase();
