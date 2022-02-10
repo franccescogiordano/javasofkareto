@@ -7,7 +7,7 @@ public class main {
 
     static MOV moverFunction= new MOV();
 
-    public static  Integer[] memoria = new Integer[43];
+    public static  Long[] memoria = new Long[43];
     public static void main(String[] args) {
         System.out.println("Buenas tardes creador, ingrese las tareas a realiza, al terminar ingrese 0");
         Scanner sc = new Scanner(System.in);
