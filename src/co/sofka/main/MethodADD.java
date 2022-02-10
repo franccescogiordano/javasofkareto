@@ -5,13 +5,13 @@ public class MethodADD {
 
     private static final long POT_2_A_LA_32 = (long) Math.pow(2, 32);
 
-    public static long[] ADD(long[] memoria, String[] parametros){
+    public static Long[] ADD(Long[] memoria, String[] parametros){
         int posicion1Memoria = getValorDesdeString(parametros[0]);
         int posicion2Memoria = getValorDesdeString(parametros[1]);
-        long operador1 = (long)memoria[posicion1Memoria];
-        long operador2 = (long)memoria[posicion2Memoria];
+        Long operador1 = (long)memoria[posicion1Memoria];
+        Long operador2 = (long)memoria[posicion2Memoria];
 
-        memoria[posicion1Memoria] = Math.toIntExact((operador1 + operador2) % POT_2_A_LA_32);
+        memoria[posicion1Memoria] = (operador1 + operador2) % POT_2_A_LA_32;
         return memoria;
     }
 

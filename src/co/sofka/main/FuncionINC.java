@@ -10,13 +10,13 @@ public class FuncionINC {
     {
         String posicion = Rxx.replace("R", "");
 
-        if ( emulador[Integer.parseInt(posicion)] >= Long.parseLong("4294967295"))
+        if ( main.memoria[Integer.parseInt(posicion)] >= Long.parseLong("4294967295",32))
         {
-            emulador[Integer.parseInt(posicion)] = 0;
+            main.memoria[Integer.parseInt(posicion)] = (long) 0;
 
         }
         else{
-            emulador[Integer.parseInt(posicion)] =  emulador[Integer.parseInt(posicion)] + 1;
+            main.memoria[Integer.parseInt(posicion)] =  main.memoria[Integer.parseInt(posicion)] + 1;
         }
 
     }
