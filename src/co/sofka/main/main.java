@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class main {
+
+    static MOV moverFunction= new MOV();
+
     public static  Integer[] memoria = new Integer[43];
     public static void main(String[] args) {
         System.out.println("Buenas tardes creador, ingrese las tareas a realiza, al terminar ingrese 0");
@@ -27,7 +30,7 @@ public class main {
             parametros=instruccionArelizar[1].split(",");
         switch (instruccionx){
             case "MOV":
-
+                moverFunction.mover(parametros);
                 break;
             case "ADD":
 
