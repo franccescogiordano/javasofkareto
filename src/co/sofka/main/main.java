@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class main {
 
-    public static  Integer[] memoria = new Integer[43];
+    public static  long[] memoria = new long[43];
 
     public static void main(String[] args) {
 //        System.out.println("Buenas tardes creador, ingrese las tareas a realiza, al terminar ingrese 0");

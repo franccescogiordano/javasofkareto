@@ -5,7 +5,7 @@ public class MethodADD {
 
     private static final long POT_2_A_LA_32 = (long) Math.pow(2, 32);
 
-    public static Integer[] ADD(Integer[] memoria, String[] parametros){
+    public static long[] ADD(long[] memoria, String[] parametros){
         int posicion1Memoria = getValorDesdeString(parametros[0]);
         int posicion2Memoria = getValorDesdeString(parametros[1]);
         long operador1 = (long)memoria[posicion1Memoria];
