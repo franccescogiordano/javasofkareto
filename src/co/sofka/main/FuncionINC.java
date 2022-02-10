@@ -10,7 +10,7 @@ public class FuncionINC {
     {
         String posicion = Rxx.replace("R", "");
 
-        if ( emulador[Integer.parseInt(posicion)] >= 4294967295)
+        if ( emulador[Integer.parseInt(posicion)] >= Long.parseLong("4294967295"))
         {
             emulador[Integer.parseInt(posicion)] = 0;
 
