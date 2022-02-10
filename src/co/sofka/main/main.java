@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class main {
+    INV invfuncion= new INV();
     public static  Integer[] memoria = new Integer[43];
     public static void main(String[] args) {
         System.out.println("Buenas tardes creador, ingrese las tareas a realiza, al terminar ingrese 0");
@@ -14,7 +15,7 @@ public class main {
 
     }
 
-    public static void hacerTareas(String[] instrucciones) {
+    public void hacerTareas(String[] instrucciones) {
         String[] instrucionesDesglosadas= new String[instrucciones.length];
        String[] instruccionArelizar= new String[2];
         String[] parametros= new String[2];
@@ -45,7 +46,9 @@ public class main {
             case "JZ":
 
                 break;
-
+            case "INV":
+                invfuncion.INVFuncion(parametros[0]);
+                break;
 
 
 
